@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/p211/Documents/個人/CC2 log --oneline -5)",
+      "Bash(git -C /Users/p211/Documents/個人/CC2 remote -v)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(npm run:*)",
+      "Bash(brew list:*)",
+      "Bash(pyenv versions:*)",
+      "Bash(python3 -m venv venv)",
+      "Bash(source venv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(pip freeze:*)",
+      "Bash(timeout 5 uvicorn main:app --host 0.0.0.0 --port 8000)",
+      "Bash(python3 -c \"from main import app; print\\(''FastAPI app loaded OK''\\)\")",
+      "Bash(alembic init:*)",
+      "Bash(alembic revision:*)",
+      "Bash(docker:*)",
+      "Bash(alembic upgrade:*)",
+      "Bash(python3 -c \"from main import app; print\\(''Auth router loaded OK''\\); print\\([r.path for r in app.routes]\\)\")",
+      "Bash(python3 -c \"from main import app; print\\(''All routers loaded OK''\\); print\\([r.path for r in app.routes]\\)\")",
+      "Bash(source /Users/p211/Documents/個人/CC2/backend/venv/bin/activate)",
+      "Bash(curl:*)",
+      "Bash(python3 -m json.tool)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo:*)",
+      "Bash(ssh-keygen:*)",
+      "Bash(ssh:*)"
+    ]
+  }
+}
