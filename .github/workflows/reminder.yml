@@ -17,9 +17,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Initialize database    
       - run: python services/reminder.py
         env:
-          PYTHONPATH: ${{ github.workspace }}/backend
+          PYTHONPATH: .
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM: ${{ secrets.RESEND_FROM }}
