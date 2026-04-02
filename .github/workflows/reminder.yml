@@ -4,7 +4,9 @@ on:
   schedule:
     - cron: '0 * * * *'  # 毎時実行
   workflow_dispatch:
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ← これを追加
+  
 jobs:
   send-reminders:
     runs-on: ubuntu-latest
