@@ -17,7 +17,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Initialize database    
+      - name: Initialize database
+        run: python -c "from models.database import Base, engine; Base.metadata.create_all(engine)"
+        env:
+          PYTHONPATH: .
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
       - run: python services/reminder.py
         env:
           PYTHONPATH: .
